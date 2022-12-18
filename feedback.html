@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <script src="./js/feedback.js" defer type="module"></script>
+    <title>Firewave GmbH</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="./"
+          ><img class="logo" src="./img/firewave-logo.png" alt="Firewave Logo"
+        /></a>
+        <span class="header-text"
+          >Ihr Ansprechpartner für effiziente Softwarelösungen und
+          Webdesign</span
+        >
+      </div>
+    </header>
+    <nav>
+      <input type="checkbox" name="hamburger" id="hamburger" />
+      <label for="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </label>
+      <ul class="nav-container">
+        <li><a class="nav-item" href="./">Home</a></li>
+        <li><a class="nav-item" href="./offers.html">Angebote</a></li>
+        <li><a class="nav-item" href="./products.html">Produkte</a></li>
+        <li><a class="nav-item" href="./references.html">Testimonials</a></li>
+        <li><a class="nav-item active" href="./feedback.html">Feedback</a></li>
+        <li><a class="nav-item" href="./contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Feedback</h1>
+      <section id="feedback" class="feedback">
+        <p>
+          Um uns stetig zu verbessern, sind wir auf Feedback angewiesen! Hier
+          haben Sie die Möglichkeit uns Ihre Meinung zu unserer Webseite
+          abzugeben:
+        </p>
+
+        <form class="feedback-container" action="" novalidate>
+          <label for="name">Name: *</label>
+          <div class="form-element">
+            <input class="textinput" type="text" id="name" name="name" />
+            <img class="check-img" id="check-name" />
+          </div>
+          <span class="errormessage" id="name-error"></span>
+
+          <label for="email">E-Mail: *</label>
+          <div class="form-element">
+            <input class="textinput" type="email" id="email" name="email" />
+            <img class="check-img" id="check-mail" />
+          </div>
+          <span class="errormessage" id="email-error"></span>
+
+          <label>Bewertung Design: *</label>
+          <div class="form-element">
+            <div class="range-container">
+              <input
+                type="range"
+                id="design"
+                name="design"
+                min="0"
+                value="0"
+                max="10"
+              />
+              <span id="design-rating">0</span>
+            </div>
+            <img class="check-img" id="check-design" />
+          </div>
+          <span class="errormessage" id="design-error"></span>
+
+          <label>Bewertung Komponenten: *</label>
+          <div class="form-element">
+            <div class="range-container">
+              <input
+                type="range"
+                id="components"
+                name="Komponenten"
+                min="0"
+                value="0"
+                max="10"
+              />
+              <span id="component-rating">0</span>
+            </div>
+            <img class="check-img" id="check-component" />
+          </div>
+          <span class="errormessage" id="component-error"></span>
+
+          <label for="comment">Kommentar</label>
+          <div class="form-element">
+            <textarea
+              rows="10"
+              cols="30"
+              type="text"
+              id="comment"
+              name="comment"
+              placeholder="Ihr Text hier..."
+            ></textarea>
+          </div>
+          <span>* Pflichtfelder</span>
+          <div class="form-element">
+            <button class="button" id="submit" type="submit">Senden</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>© Firewave GmbH</footer>
+  </body>
+</html>

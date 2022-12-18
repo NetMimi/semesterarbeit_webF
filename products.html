@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/products.js" defer type="module"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <title>Firewave GmbH</title>
+  </head>
+  <body>
+    <header id="page-header">
+      <div class="header-container">
+        <a href="./"
+          ><img class="logo" src="./img/firewave-logo.png" alt="Firewave Logo"
+        /></a>
+        <span class="header-text"
+          >Ihr Ansprechpartner für effiziente Softwarelösungen und
+          Webdesign</span
+        >
+      </div>
+    </header>
+    <nav>
+      <input type="checkbox" name="hamburger" id="hamburger" />
+      <label for="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </label>
+      <ul class="nav-container">
+        <li><a class="nav-item" href="./">Home</a></li>
+        <li><a class="nav-item" href="./offers.html">Angebote</a></li>
+        <li><a class="nav-item active" href="./products.html">Produkte</a></li>
+        <li><a class="nav-item" href="./references.html">Testimonials</a></li>
+        <li><a class="nav-item" href="./feedback.html">Feedback</a></li>
+        <li><a class="nav-item" href="./contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 id="page-title">Produkte</h1>
+
+      <section class="selection-container">
+        <div class="select-container">
+          <label for="count-selection">Anzahl Produkte</label>
+          <select name="count-selection" id="count-selection">
+            <option selected class="select-value" value="10">10</option>
+            <option class="select-value" value="20">20</option>
+            <option class="select-value" value="30">30</option>
+            <option class="select-value" value="50">50</option>
+          </select>
+        </div>
+
+        <div class="select-container">
+          <label for="category-selection">Kategorie</label>
+          <select name="category-selection" id="category-selection">
+            <option selected value="all">Alle</option>
+            <option value="3">Gaming</option>
+            <option value="2">Möbel</option>
+            <option value="1">Transport</option>
+          </select>
+        </div>
+
+        <div class="select-container">
+          <label for="price-selection">Preis</label>
+          <select name="price-selection" id="price-selection">
+            <option selected value="none">Unsortiert</option>
+            <option value="up">Aufsteigend</option>
+            <option value="down">Absteigend</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="products-amount">
+        <p>Anzahl vorhandene Produkte: <span id="product-amount"></span></p>
+      </section>
+
+      <section class="product-container" id="product-container"></section>
+    </main>
+    <footer>© Firewave GmbH</footer>
+    <div id="overlay">
+      <div id="overlay-content"></div>
+    </div>
+  </body>
+</html>
